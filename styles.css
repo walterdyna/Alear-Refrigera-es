@@ -1,6 +1,6 @@
-/* styles.css */
+/* styles.css - Tema Alear Refrigerações */
 
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #00796b;
+  background-color: #004d40;
   color: white;
   padding: 1rem 2rem;
   position: sticky;
@@ -36,8 +36,8 @@ header {
   margin: 0 auto;
 }
 
-.logo-img{
-  width: 100px;
+.logo-img {
+  width: 120px;
 }
 
 .menu {
@@ -62,6 +62,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   user-select: none;
+  color: white;
 }
 
 #menu-toggle {
@@ -76,7 +77,7 @@ header {
 
 h1, h2 {
   margin-bottom: 1rem;
-  color: #004d40;
+  color: #00796b;
 }
 
 ul {
@@ -84,8 +85,35 @@ ul {
   margin-top: 1rem;
 }
 
+.home.destaque {
+  background-color: #e0f2f1;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
 
+.btn-destaque {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
 
+.btn-destaque:hover {
+  background-color: #004d40;
+}
+
+.servicos ul li i {
+  margin-right: 0.5rem;
+  color: #00796b;
+}
 
 button#whatsapp-button,
 button#btn-atendimento {
@@ -208,7 +236,7 @@ footer {
     position: fixed;
     top: 60px;
     right: 0;
-    background-color: #00796b;
+    background-color: #004d40;
     height: calc(100% - 60px);
     width: 200px;
     flex-direction: column;
@@ -236,7 +264,7 @@ footer {
   }
 }
 
-/* Estilo para imagens na seção serviços */
+/* Imagens seção serviços */
 .servicos .imagem-secao {
   width: 7cm;
   max-width: 100%;
@@ -252,7 +280,7 @@ footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* Modal para exibir imagem ampliada */
+/* Modal imagem ampliada */
 #modal-imagem {
   display: none;
   position: fixed;

@@ -3,16 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ClimaTech - Soluções em Ar-Condicionado</title>
+  <title>Alear Refrigerações - Climatização e Refrigeração com Excelência</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="icon" href="assets/favicon-alear.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .dark-mode header,
+    .dark-mode .menu {
+      background-color: #1e1e1e;
+    }
+    .dark-mode .btn-destaque,
+    .dark-mode #form-contato button {
+      background-color: #333;
+    }
+    .dark-mode .btn-destaque:hover,
+    .dark-mode #form-contato button:hover {
+      background-color: #555;
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background-color: #00796b;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1002;
+    }
+  </style>
 </head>
 <body>
+  <button class="dark-toggle" onclick="document.body.classList.toggle('dark-mode')">Modo Escuro</button>
+
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img class="logo-img" src="/assets/logo-ar.svg.png" alt="ClimaTech" />
+        <img class="logo-img" src="./assets/logo-alear.png.png" alt="Alear Refrigerações" />
       </div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">☰</label>
@@ -28,58 +61,61 @@
 
   <main>
     <section id="home" class="section home destaque">
-      <h1>Conforto e Qualidade do Ar em um Só Lugar</h1>
-      <p>Soluções completas em instalação, manutenção e limpeza de ar-condicionado para residências e empresas.</p>
+      <h1>Excelência em Climatização, Confiança em Cada Ambiente</h1>
+      <p>Mais de 13 anos levando conforto e eficiência onde você mais precisa.</p>
       <a href="#contato" class="btn-destaque">Peça um Orçamento</a>
     </section>
 
     <section id="sobre" class="section sobre">
-      <h2>Quem Somos</h2>
-      <p>Desde 2005, a <strong>ClimaTech</strong> oferece serviços de climatização com excelência e confiança. Nossa equipe técnica é especializada em garantir o melhor desempenho do seu ar-condicionado, com foco na saúde e conforto dos nossos clientes.</p>
-      <img src="assets/equipe.jpg" alt="Equipe ClimaTech" class="imagem-secao" />
+      <h2>Sobre a Alear Refrigerações</h2>
+      <p><strong>Missão:</strong> Oferecer soluções de refrigeração de alta performance, aliando tecnologia, eficiência e sustentabilidade.</p>
+      <p><strong>Visão:</strong> Ser referência no RJ e ES pela qualidade, inovação e experiência do cliente.</p>
+      <p><strong>Propósito:</strong> Proporcionar qualidade de vida, conforto e confiança através do ar.</p>
+      <img src="assets/equipe.jpg" alt="Equipe Alear Refrigerações" class="imagem-secao" />
     </section>
 
     <section id="servicos" class="section servicos">
       <h2>Nossos Serviços</h2>
       <ul>
-        <li><strong>Limpeza de Ar-Condicionado:</strong> Remoção de fungos, bactérias e impurezas que afetam a saúde e o desempenho do aparelho.</li>
-        <li><strong>Instalação:</strong> Técnicos certificados para garantir uma instalação eficiente, segura e com estética.</li>
-        <li><strong>Manutenção Preventiva:</strong> Evite problemas e aumente a vida útil do equipamento com revisões periódicas.</li>
-        <li><strong>Consultoria Técnica:</strong> Auxiliamos na escolha do modelo ideal para seu ambiente e necessidades.</li>
+        <li><i class="fas fa-tools"></i> <strong>Instalação Técnica Especializada:</strong> Equipamentos modernos e alto padrão de execução.</li>
+        <li><i class="fas fa-wrench"></i> <strong>Manutenção Preventiva e Corretiva:</strong> Funcionamento contínuo e sem surpresas.</li>
+        <li><i class="fas fa-drafting-compass"></i> <strong>Consultoria e Projeto Personalizado:</strong> Soluções sob medida para cada ambiente.</li>
+        <li><i class="fas fa-clipboard-check"></i> <strong>PMOC:</strong> Conformidade com normas técnicas e segurança garantida.</li>
+        <li><i class="fas fa-headset"></i> <strong>Suporte Técnico Dedicado:</strong> Atendimento profissional e rápido.</li>
       </ul>
-      <img id="ar1" src="/assets/ar1.png" alt="Serviços ClimaTech" class="imagem-secao" />
-      <img src="/assets/ar2.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
-      <img src="/assets/ar3.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
+      <img src="/assets/ar1.png" alt="Serviços Alear" class="imagem-secao" />
+      <img src="/assets/ar2.jpg" alt="Execução Técnica Alear" class="imagem-secao" />
+      <img src="/assets/ar3.jpg" alt="Manutenção Alear" class="imagem-secao" />
     </section>
 
-  <!-- Modal para imagens ampliadas -->
-  <div id="modal-imagem">
-    <div class="modal-conteudo">
-      <span class="fechar" id="fechar-modal">&times;</span>
-      <img id="imagem-modal" src="" alt="Imagem ampliada" />
-    </div>
-  </div>
-
     <section id="clientes" class="section clientes">
-      <h2>Clientes que Confiam</h2>
-      <p>Atendemos empresas e residências com a mesma dedicação. Alguns de nossos parceiros:</p>
+      <h2>Parcerias de Sucesso</h2>
+      <p>Empresas que confiam na Alear Refrigerações no Rio de Janeiro e Espírito Santo:</p>
       <ul>
-        <li>🍫 Cacau Show</li>
-        <li>🍻 Bar Casa dos Super-Heróis</li>
+        <li>🛏️ Ortobom Colchões – Niterói, RJ</li>
+        <li>📚 Livraria Nobel – Petrópolis e Itaipava, RJ</li>
+        <li>👝 Lê Postiche – Barra da Tijuca e Itaipava, RJ</li>
+        <li>👗 Hering e Santa Lola – Petrópolis e Teresópolis, RJ</li>
+        <li>🍫 Cacau Show – Rio de Janeiro e Grande Rio</li>
+        <li>💅 Nails & More – Barra da Tijuca, RJ</li>
+        <li>🏥 Bambina Oncologia – Botafogo, RJ</li>
+        <li>🏥 Prevent Otorrino – Serra, ES</li>
+        <li>💄 Miamar Make – RJ e Grande Rio</li>
       </ul>
     </section>
 
     <section id="contato" class="section contato">
       <h2>Fale Conosco</h2>
-      <p>Quer um atendimento personalizado? Clique abaixo para preencher o formulário rápido e enviar para nosso WhatsApp.</p>
+      <p>Estamos prontos para transformar seu ambiente. Solicite um orçamento rápido e envie diretamente para nosso WhatsApp.</p>
+      <p><strong>Telefones:</strong> (21) 96465-7727 | (21) 96404-8569 | (27) 99785-7860</p>
+      <p><strong>Email:</strong> alear.refrigeracoes@gmail.com</p>
+      <p><strong>Atendemos:</strong> RJ e ES</p>
       <button id="whatsapp-button">Abrir Formulário</button>
     </section>
   </main>
 
-  <!-- Botão flutuante fixo -->
   <button id="btn-atendimento">Atendimento</button>
 
-  <!-- Formulário Flutuante -->
   <div id="formulario-flutuante">
     <form id="form-contato">
       <h3>Solicitar Orçamento</h3>
@@ -98,7 +134,7 @@
   </a>
 
   <footer>
-    <p>© 2025 ClimaTech - Todos os direitos reservados</p>
+    <p>© 2025 Alear Refrigerações - CNPJ: 19.511.950/0001-09 - Todos os direitos reservados</p>
   </footer>
 
   <script src="script.js"></script>
