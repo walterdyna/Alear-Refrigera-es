@@ -95,7 +95,7 @@ if (imagens && modal && modalImg && fecharModal) {
     }
   });
 
-  // Fechar modal com tecla ESC
+  // Fechar modal com tecla ESC ou x
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.style.display === 'flex') {
       modal.style.display = 'none';
