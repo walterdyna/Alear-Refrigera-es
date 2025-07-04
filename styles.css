@@ -184,6 +184,13 @@ button#btn-atendimento {
   overflow: hidden;
 }
 
+.footer{
+  border: none;
+  text-decoration: none;
+  color: rgb(240, 99, 5);
+  transition: color 0.3s ease;
+}
+
 button#btn-atendimento img {
   width: 60px !important;
   height: 61px !important;
