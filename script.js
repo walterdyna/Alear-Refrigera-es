@@ -38,3 +38,31 @@ formContato.addEventListener('submit', (e) => {
   const url = `https://wa.me/${telefoneDestino}?text=${mensagem}`;
   window.open(url, '_blank');
 });
+
+// Script para modal de imagens ampliadas na seção serviços
+const imagens = document.querySelectorAll('.servicos .imagem-secao');
+const modal = document.getElementById('modal-imagem');
+const modalImg = document.getElementById('imagem-modal');
+const fecharModal = document.getElementById('fechar-modal');
+
+imagens.forEach(img => {
+    img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+    });
+});
+
+fecharModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+    modalImg.alt = '';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+        modalImg.alt = '';
+    }
+});

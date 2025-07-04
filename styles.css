@@ -23,6 +23,11 @@ header {
   z-index: 1000;
 }
 
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -31,8 +36,8 @@ header {
   margin: 0 auto;
 }
 
-.logo img {
-  height: 40px;
+.logo-img{
+  width: 100px;
 }
 
 .menu {
@@ -78,6 +83,9 @@ ul {
   list-style: disc inside;
   margin-top: 1rem;
 }
+
+
+
 
 button#whatsapp-button,
 button#btn-atendimento {
@@ -226,4 +234,58 @@ footer {
     width: 100%;
     max-width: 350px;
   }
+}
+
+/* Estilo para imagens na seção serviços */
+.servicos .imagem-secao {
+  width: 7cm;
+  max-width: 100%;
+  margin-right: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.servicos .imagem-secao:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Modal para exibir imagem ampliada */
+#modal-imagem {
+  display: none;
+  position: fixed;
+  z-index: 1500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-imagem .modal-conteudo {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#modal-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#modal-imagem .fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
 }

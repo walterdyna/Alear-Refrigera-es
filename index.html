@@ -12,7 +12,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="/assets/logo-ar.svg.png" alt="ClimaTech" />
+        <img class="logo-img" src="/assets/logo-ar.svg.png" alt="ClimaTech" />
       </div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">☰</label>
@@ -47,10 +47,18 @@
         <li><strong>Manutenção Preventiva:</strong> Evite problemas e aumente a vida útil do equipamento com revisões periódicas.</li>
         <li><strong>Consultoria Técnica:</strong> Auxiliamos na escolha do modelo ideal para seu ambiente e necessidades.</li>
       </ul>
-      <img src="/assets/ar1.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
+      <img id="ar1" src="/assets/ar1.png" alt="Serviços ClimaTech" class="imagem-secao" />
       <img src="/assets/ar2.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
       <img src="/assets/ar3.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
     </section>
+
+  <!-- Modal para imagens ampliadas -->
+  <div id="modal-imagem">
+    <div class="modal-conteudo">
+      <span class="fechar" id="fechar-modal">&times;</span>
+      <img id="imagem-modal" src="" alt="Imagem ampliada" />
+    </div>
+  </div>
 
     <section id="clientes" class="section clientes">
       <h2>Clientes que Confiam</h2>
