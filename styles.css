@@ -1,0 +1,229 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #80cbc4;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #004d40;
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+}
+
+button#whatsapp-button,
+button#btn-atendimento {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#whatsapp-button:hover,
+button#btn-atendimento:hover {
+  background-color: #128c4a;
+}
+
+#btn-atendimento {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+#whatsapp-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Formulário flutuante */
+#formulario-flutuante {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: left 0.4s ease;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formulario-flutuante.aberto {
+  left: 0;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+#form-contato input,
+#form-contato textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#form-contato textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#form-contato button {
+  background-color: #00796b;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form-contato button:hover {
+  background-color: #004d40;
+}
+
+#fechar-form {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0f2f1;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: #00796b;
+    height: calc(100% - 60px);
+    width: 200px;
+    flex-direction: column;
+    padding-top: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menu li {
+    margin-bottom: 1rem;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  #formulario-flutuante {
+    width: 100%;
+    max-width: 350px;
+  }
+}

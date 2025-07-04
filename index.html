@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClimaTech - Soluções em Ar-Condicionado</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/assets/logo-ar.svg.png" alt="ClimaTech" />
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home destaque">
+      <h1>Conforto e Qualidade do Ar em um Só Lugar</h1>
+      <p>Soluções completas em instalação, manutenção e limpeza de ar-condicionado para residências e empresas.</p>
+      <a href="#contato" class="btn-destaque">Peça um Orçamento</a>
+    </section>
+
+    <section id="sobre" class="section sobre">
+      <h2>Quem Somos</h2>
+      <p>Desde 2005, a <strong>ClimaTech</strong> oferece serviços de climatização com excelência e confiança. Nossa equipe técnica é especializada em garantir o melhor desempenho do seu ar-condicionado, com foco na saúde e conforto dos nossos clientes.</p>
+      <img src="assets/equipe.jpg" alt="Equipe ClimaTech" class="imagem-secao" />
+    </section>
+
+    <section id="servicos" class="section servicos">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li><strong>Limpeza de Ar-Condicionado:</strong> Remoção de fungos, bactérias e impurezas que afetam a saúde e o desempenho do aparelho.</li>
+        <li><strong>Instalação:</strong> Técnicos certificados para garantir uma instalação eficiente, segura e com estética.</li>
+        <li><strong>Manutenção Preventiva:</strong> Evite problemas e aumente a vida útil do equipamento com revisões periódicas.</li>
+        <li><strong>Consultoria Técnica:</strong> Auxiliamos na escolha do modelo ideal para seu ambiente e necessidades.</li>
+      </ul>
+      <img src="/assets/ar1.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
+      <img src="/assets/ar2.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
+      <img src="/assets/ar3.jpg" alt="Serviços ClimaTech" class="imagem-secao" />
+    </section>
+
+    <section id="clientes" class="section clientes">
+      <h2>Clientes que Confiam</h2>
+      <p>Atendemos empresas e residências com a mesma dedicação. Alguns de nossos parceiros:</p>
+      <ul>
+        <li>🍫 Cacau Show</li>
+        <li>🍻 Bar Casa dos Super-Heróis</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="section contato">
+      <h2>Fale Conosco</h2>
+      <p>Quer um atendimento personalizado? Clique abaixo para preencher o formulário rápido e enviar para nosso WhatsApp.</p>
+      <button id="whatsapp-button">Abrir Formulário</button>
+    </section>
+  </main>
+
+  <!-- Botão flutuante fixo -->
+  <button id="btn-atendimento">Atendimento</button>
+
+  <!-- Formulário Flutuante -->
+  <div id="formulario-flutuante">
+    <form id="form-contato">
+      <h3>Solicitar Orçamento</h3>
+      <input type="text" id="empresa" placeholder="Empresa" required />
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="tel" id="telefone" placeholder="Telefone" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="descricao" placeholder="Descreva o problema ou serviço desejado" required></textarea>
+      <button type="submit">Enviar para WhatsApp</button>
+      <span id="fechar-form">&times;</span>
+    </form>
+  </div>
+
+  <a href="https://wa.me/5521964657727?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" id="whatsapp-icon">
+    <img src="assets/whatsapp.svg" alt="WhatsApp" />
+  </a>
+
+  <footer>
+    <p>© 2025 ClimaTech - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
