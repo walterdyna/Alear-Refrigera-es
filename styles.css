@@ -51,7 +51,12 @@ body.dark-mode header {
 }
 
 .logo-img {
-  width: 120px;
+  width: 300px !important;
+  height: 100px !important;
+  transform: scale(1.3);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+  margin-top: 5px;
 }
 
 .menu {
