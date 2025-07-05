@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alear Refrigerações - Climatização e Refrigeração com Excelência</title>
+  <meta name="description" content="Alear Refrigerações oferece serviços de climatização, ar condicionado, limpeza de ar condicionado, manutenção preventiva e corretiva, consultoria personalizada e suporte técnico dedicado no Rio de Janeiro e Espírito Santo." />
+  <meta name="keywords" content="ar condicionado, limpeza de ar condicionado, climatização de ambiente, manutenção de ar condicionado, refrigeração, Alear Refrigerações, Rio de Janeiro, Espírito Santo" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon-alear.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -60,32 +62,32 @@
   </header>
 
   <main>
-    <section id="home" class="section home destaque">
+    <section id="home" class="section home destaque" role="banner" aria-label="Climatização e Refrigeração">
       <h1>Excelência em Climatização, Confiança em Cada Ambiente.</h1>
-      <p>Mais de 13 anos levando conforto e eficiência onde você mais precisa.</p>
-      <a href="#contato" class="btn-destaque">Peça um Orçamento</a>
+      <p>Mais de 13 anos levando conforto e eficiência em climatização, ar condicionado, limpeza de ar condicionado e refrigeração onde você mais precisa.</p>
+      <a href="#contato" class="btn-destaque" role="button" aria-label="Peça um Orçamento">Peça um Orçamento</a>
     </section>
 
-    <section id="sobre" class="section sobre">
-      <h2>Sobre a Alear Refrigerações</h2>
+    <section id="sobre" class="section sobre" role="region" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre a Alear Refrigerações</h2>
       <p><strong>Missão:</strong> Oferecer soluções de refrigeração de alta performance, aliando tecnologia, eficiência e sustentabilidade. Nosso compromisso é atender com excelência desde pequenos negócios até grandes corporações, garantindo conforto, segurança e bem-estar em cada ambiente.</p>
       <p><strong>Visão:</strong> Ser referência em refrigeração no Rio de Janeiro e Espírito Santo, reconhecida pela qualidade dos serviços, inovação constante e foco total na experiência do cliente. Buscamos estar à frente do nosso tempo, entregando soluções inteligentes que superem expectativas e promovam um impacto positivo no dia a dia das pessoas.</p>
       <p><strong>Propósito:</strong> Transformar ambientes através do ar. Mais do que climatizar, queremos proporcionar qualidade de vida, conforto e confiança. Trabalhamos com ética, transparência e dedicação, investindo em tecnologia e capacitação contínua para sermos a escolha certa no que diz respeito a climatização e refrigeração.</p>
       
     </section>
 
-    <section id="servicos" class="section servicos">
-      <h2>Nossos Serviços</h2>
+    <section id="servicos" class="section servicos" role="region" aria-labelledby="servicos-title">
+      <h2 id="servicos-title">Nossos Serviços de Climatização e Refrigeração</h2>
       <ul>
-        <li><i class="fas fa-tools"></i> <strong>Instalação Técnica Especializada:</strong> Equipamentos modernos e alto padrão de execução.</li>
-        <li><i class="fas fa-wrench"></i> <strong>Manutenção Preventiva e Corretiva:</strong> Funcionamento contínuo e sem surpresas.</li>
-        <li><i class="fas fa-drafting-compass"></i> <strong>Consultoria e Projeto Personalizado:</strong> Soluções sob medida para cada ambiente.</li>
+        <li><i class="fas fa-tools"></i> <strong>Instalação Técnica Especializada de Ar Condicionado:</strong> Equipamentos modernos e alto padrão de execução.</li>
+        <li><i class="fas fa-wrench"></i> <strong>Manutenção Preventiva e Corretiva de Ar Condicionado:</strong> Funcionamento contínuo e sem surpresas.</li>
+        <li><i class="fas fa-drafting-compass"></i> <strong>Consultoria e Projeto Personalizado de Climatização:</strong> Soluções sob medida para cada ambiente.</li>
         <li><i class="fas fa-clipboard-check"></i> <strong>PMOC:</strong> Conformidade com normas técnicas e segurança garantida.</li>
         <li><i class="fas fa-headset"></i> <strong>Suporte Técnico Dedicado:</strong> Atendimento profissional e rápido.</li>
       </ul>
-      <img src="./assets/ar1.png" alt="Serviços Alear" class="imagem-secao" />
-      <img src="./assets/ar2.jpg" alt="Execução Técnica Alear" class="imagem-secao" />
-      <img src="./assets/ar3.jpg" alt="Manutenção Alear" class="imagem-secao" />
+      <img src="./assets/ar1.png" alt="Serviços de Climatização Alear" class="imagem-secao" />
+      <img src="./assets/ar2.jpg" alt="Execução Técnica de Climatização Alear" class="imagem-secao" />
+      <img src="./assets/ar3.jpg" alt="Manutenção de Climatização Alear" class="imagem-secao" />
     </section>
 
     <section id="clientes" class="section clientes">
@@ -115,11 +117,9 @@
       <button id="whatsapp-button">Abrir Formulário</button>
     </section>
   </main>
-
   <button id="btn-atendimento">
     <img src="./assets/atendimento.png" alt="Atendimento" style="width: 40px; height: 40px;" />
   </button>
-
   <div id="formulario-flutuante">
     <form id="form-contato">
       <h3>Solicitar Orçamento</h3>
@@ -132,11 +132,31 @@
       <span id="fechar-form">&times;</span>
     </form>
   </div>
-
   <footer>
     <p >© 2025 Alear Refrigerações - Todos os direitos reservados - <a class="footer" href="https://www.walterdyna.com.br" target="_blank" rel="noopener noreferrer">Alex Dyna</a></p>
   </footer>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Alear Refrigerações",
+    "image": "https://www.seusite.com/assets/logo-alear.png",
+    "telephone": ["+5521964657727", "+5521964048569", "+5527997857860"],
+    "email": "alear.refrigeracoes@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "url": "https://www.seusite.com",
+    "sameAs": [
+      "https://www.facebook.com/alearrefrigeracoes",
+      "https://www.instagram.com/alearrefrigeracoes"
+    ],
+    "description": "Soluções em climatização, ar condicionado, limpeza de ar condicionado, manutenção preventiva e corretiva, consultoria personalizada e suporte técnico dedicado no Rio de Janeiro e Espírito Santo."
+  }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
